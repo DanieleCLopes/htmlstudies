@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="estiloshtml5aula6a9.css">
+	<title>HTML5aula11-new form itens</title>
+</head>
+<body>
+	<header id="cab">
+		<img src="logo.jpg">
+		<div id="social">
+			<img src="facebook.png">
+			<img src="twitter.png">
+		</div>
+		<nav id="menu">
+			<ul>
+				<li><a href="html5aula6a9site2.html" target="_self">Home</a></li>
+				<li><a href="html5aula10site2-detailssummary.html" target="_self">Módulos</a></li>
+				<li><a href="html5aula11site2-newforms.html" target="_self">Contato</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<br class="fixfloat">
+
+	<section id="contato">
+		<form name="fcontato" method="post" action="#">
+		<label>Nome</label>
+		<input type="text" maxlength="50" size="60" name="fnome" autofocus required>
+		<label>Tel</label>
+		<input type="tel" maxlength="15" size="20" name="ffone" placeholder="(xx)xxxx-xxxx" required>
+		<label>e-mail</label>
+		<input type="e-mail" maxlength="50" size="60" name="femail" required>
+		<label>Cep</label>
+		<input type="e-mail" maxlength="10" size="15" name="fcep" placeholder="xxxxx-xxx" pattern="\d{5}-?\d{3}" required>
+		<label>Módulo</label>
+		<input type="number" min="1" max="10" step="1" value="1" name="fmod" required>
+		<label>Horário</label>
+		<input type="time" value="10:00" step="1800"  name="fhora" required>
+		<label>Cor da pasta</label>
+		<input type="color" name="fcor" value="#008800" required>
+		<label>D.Nasc.</label>
+		<input type="date" name="fnasc" required>
+
+		<input type="submit" value="Enviar">
+		<input type="reset" value="Apagar">
+		</form>
+	</section>
+
+	<br class="fixfloat">
+
+	<footer>
+		<p>Layout blalba</p>
+		<p>sbrobous</p>
+		<p>furfles</p>
+	</footer>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<html>
+	<head>
+		<title>Aula31-Marquee - letreiro</title>
+		<style type="text/css">
+		</style>
+
+		<script language="javascript">
+
+		</script>
+	</head>
+	<body>
+	<!- behavior por padrão é scroll: passa de um lado para o outro da tela 
+		slide: de um lado para o outro e para no lado oposto que começou
+		laternate: fica batendo e voltando 
+	direction por padrão left: sai da direta para a esquerda
+		right: sai da esquerda para a direita
+		up: de baixo para cima
+		down: de cima para baixo
+	loop para scroll e alternate ele é padrão, quando seleciona slide, pode determinar a quantidade de vezes que vai ficar passando, se quiser infinito (-1) 
+	scrollamount velocidade de deslocamento (salto) do letreiro em pixels
+	scrolldelay tempo entre um salto e outro em nanosegundos
+	no IE dá pra ver o salto, no Chrome ele "atenua" o pulo, como se transformasse em animação ->
+		<marquee width="500" behavior="slide" direction="left" loop="2" scrollamount="100" scrolldelay="1">
+		<!- pode colocar imagens tb ->
+			Canal fessor Bruno
+		</marquee>
+
+		<marquee height="500" behavior="aternate" direction="down" loop="11" scrollamount="10" scrolldelay="1">
+			<marquee width="500" behavior="alternate" direction="left" loop="-1" scrollamount="10" scrolldelay="1">
+		<!- pode colocar um dentro do outro ->
+				Canal fessor Bruno
+			</marquee>
+		</marquee>
+	</body>
+</html>

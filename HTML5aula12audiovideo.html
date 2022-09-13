@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>HTML5aula12 - tags audio e video</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="">
+	
+</head>
+<body>
+	<audio src="musica.mp3" autoplay controls loop muted preload="auto">
+///para um único arquivo ^
+///autoplay, controls, loop, muted são boolean, não precisa de especificar, mas se quiser:
+///autoplay="autoplay"
+///preload em auto para pré-carregar junto com o site
+		<source src="musica.mp3">
+		<source src="musica.mp3">
+		<source src="musica.mp3">
+		<source src="musica.mp3">
+		<source src="musica.mp3">
+///para mais de um arquivo ^
+		<p>Seu browser não é compatível com a tag áudio</p>
+	</audio>
+
+	<video width="450" poster="logo.jpg">
+///mesmos parâmetros que o áudio
+///poster mostra uma imagem enquanto o vídeo não está sendo reproduzido
+		<source src="vinheta.mp4">
+		<p>Seu browser não é compatível com a tag vídeo</p>
+	</video>
+</body>
+</html>

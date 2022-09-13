@@ -1,0 +1,73 @@
+<html>
+	<head>
+		<title>Aula38-slide de fotos</title>
+		<style type="text/css">
+			#moldura{width:600px;
+				height:450px;
+				background-color:#eeeeee;
+				transition:background-image 2s;
+			}
+		</style>
+		<script language="javascript">
+
+			function preload(){
+				imgs=array('f1.jpg','f2.jpg','f3.jpg','f4.jpg','f5.jpg','f6.jpg');
+				imgQtde=imgs.length;
+				for(i=0;i<imgsQtde;i++){
+					var preloadimg=new Image();
+					preloadimg.src=imgs[i];
+				}	
+			}
+
+			function iniciaslider(){
+				preload();
+				max=6;
+				min=1;
+				fi=min;
+				tr=true;
+				carregafoto("f1.jpg");
+				document.getElementById("moldura").addEventListener("transitionend",fimtr);
+			}
+			
+			function fimtr(){
+				tr=true;
+			}
+			
+			function carregafoto(foto){
+				document.getElementById("moldura").style.backgroundImage="URL("+foto+")";
+			
+			}
+			function prox(){
+				if(tr){
+					tr=false;
+					fi++;
+					if(fi>max){
+						fi=min;
+					}
+					carregafoto("f"+fi+".jpg");
+				}
+			}
+			function ant(){
+				if(tr){
+					tr=false;
+					fi--;
+					if(fi<min){
+						fi=max;
+					}
+					carregafoto("f"+fi+".jpg");
+				}
+			}
+			
+			
+		</script>
+	</head>
+	<body>
+		<div id="moldura"></div>
+		<input type="button" value="Anterior" onclick="ant()"/>
+		<input type="button" value="Próximo" onclick="prox()"/>
+		
+		
+		
+		
+	</body onload="iniciaslider()">
+</html>

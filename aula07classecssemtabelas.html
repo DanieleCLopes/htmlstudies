@@ -1,0 +1,64 @@
+<html>
+	<head> 
+		<title>Aula 07 - Formatação de tabelas CSS</title>
+		<!- border-collapse - puxa a da td ->
+		<style type="text/css">
+			body{	background-color:#8080ff;
+			}
+			table{	border-spacing:0px;
+				border-collapse:collapse;				}
+			td{	border:1px solid #ff0000;
+				padding:0px;
+			}
+		<!-classe inicia com um . ->
+		<!-para utilizar a "herança" ->
+			.titulo1,.titulo2{
+				background-color:#808080;
+				text-align:center;
+				height:50px;
+				vertical-align:top;<!-por padrão é middle, se quiser centralizado não precisa colocar nada ->
+				color:#ffffff;
+				font-weight:bold;
+				font-size:23px;
+				font-family:arial;
+				font-style:italic;
+			}
+		<!-o que quiser diferente, só especifica->
+			.titulo2{background-color:#c0c0c0;
+				height:30px;
+				color:#000000;
+				font-size:15px;
+			}
+			.colaborador{color:#000080;
+				background-color:#f0f0f0;
+			}
+			.salario{color:#800000;
+			}
+		</style>
+	</head>
+
+	<body>
+		<table width="500" border="1">
+			<tr>
+			<-! chamando a classe na tag ->
+				<td colspan="2" class="titulo1">Tabela de colaboradores</td>
+			</tr>
+			<tr>
+				<td class="titulo2">Colaborador</td>
+				<td class="titulo2">Salário</td>
+			</tr>
+			<tr>
+				<td class="colaborador">Meirioswaldir</td>
+				<td class="salario">3.500,00</td>
+			</tr>
+			<tr>
+				<td>Benecléia</td>
+				<td>2.750,00</td>
+			</tr>
+			<tr>
+				<td>Faromildon</td>
+				<td>3.000,00</td>
+			</tr>
+
+	</body>
+</html>

@@ -1,0 +1,80 @@
+<html>
+	<head>
+		<title>Aula39-slider de fotos automático</title>
+		<style type="text/css">
+			#moldura{width:600px;
+				height:450px;
+				background-color:#eeeeee;
+				transition:background-image 2s;
+			}
+		</style>
+		<script language="javascript">
+
+			function preload(){
+				imgs=array('f1.jpg','f2.jpg','f3.jpg','f4.jpg','f5.jpg','f6.jpg');
+				imgQtde=imgs.length;
+				for(i=0;i<imgsQtde;i++){
+					var preloadimg=new Image();
+					preloadimg.src=imgs[i];
+				}	
+			}
+
+			function iniciaslider(){
+				preload();
+				max=6;
+				min=1;
+				fi=min;
+				tr=true;
+				carregafoto("f1.jpg");
+				document.getElementById("moldura").addEventListener("transitionend",fimtr);
+				tmr=setInterval(trocaFoto,4000);
+			}
+
+			function trocaFoto(){
+				if(tr){
+					tr=false;
+					fi++;
+					if(fi>max){
+						fi=min;
+					}
+					carregafoto("f"+fi+".jpg");
+				}
+			}
+			
+			function fimtr(){
+				tr=true;
+			}
+			
+			function carregafoto(foto){
+				document.getElementById("moldura").style.backgroundImage="URL("+foto+")";
+			
+			}
+			function troca(dr){
+				clearInterval(tmr);
+				if(tr){
+					tr=false;
+					fi+=dr;
+					if(fi>max){
+						fi=min;
+					}
+					if(fi<min){
+						fi=max;
+					}
+					carregafoto("f"+fi+".jpg");
+				}
+				tmr=setInteral(trocaFoto,10000);
+			}
+			
+			
+		</script>
+	</head>
+	<body>
+		<div id="moldura"></div>
+		<input type="button" value="Anterior" onclick="ant()"/>
+		<input type="button" value="Próximo" onclick="prox()"/>
+		
+		
+		
+		
+	</body onload="iniciaslider()">
+</html>

@@ -1,0 +1,57 @@
+body{	background-image:url(fundo.gif);
+	bacground-repeat:repeat-x;	
+}
+#logo{	position:absolute;
+	top:0px;
+	left:0px;
+	width:150px;
+	height:150px;
+}
+#btmodulos{position:absolute;
+	top:94px;
+	left:150px;
+	width:167px;
+	height:33px;
+}
+#btmaterial{position:absolute;
+	top:94px;
+	left:317px;
+	width:167px;
+	height:33px;
+}
+#btsalas{position:absolute;
+	top:94px;
+	left:484px;
+	width:167px;
+	height:33px;
+}
+#menu{	position:absolute;
+	top:150px;
+	left:0px;
+	width:770px;
+	height:30px;
+	text-align:right;
+	line-height:30px;
+	word-spacing:10px;
+	color:#a0a0a0;
+	font-family:arial;
+	font-size:15px;
+}
+#banner{position:absolute;
+	top:180px;
+	left:0px;
+	width:770px;
+	height:308px;
+}
+.lkMenu{text-decoration:none;
+	color;#a0a0a0;
+	font-weight:bold;
+}
+.lkMenu:hover{color:#003333;
+}
+#main{	position:absolute;
+	top:0px;
+	left:50%;
+	width:770px;
+	margin-left:-385px;
+}

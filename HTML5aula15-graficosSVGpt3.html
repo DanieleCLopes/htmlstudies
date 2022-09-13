@@ -1,0 +1,23 @@
+<! DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<title>HTML5aula15-graficos SVG pt3</title>
+	<link rel="stylesheet" ref="">
+</head>
+<body>
+	///imagem svg pode ser aumentada o quanto precisar sem perder resolução
+	
+	<svg width="400" height="400" style="background:#aaaaaa;border:1px solid #000000">
+		<rect x="100" y="100" width="200" height="200" 
+		stroke="#000000" stroke-width="1" fill="ff0000"
+		transform="rotate(45 200 200) translate(0 0) scale(2) skewX(-10) skewY(0)"/>
+///rotate ( grau de rotação[45] origem da rotação[eixo x=200 eixo y=200])
+///translate ( eixo x[0] eixo y[0])
+///scale ( eixo x[2] eixo y[se não informar, será 0])
+///skewX(-10) distorção na horizontal
+///skewY(0) distorção na vertical
+	</svg>
+	///pode usar o javascript para fazer animações dentro do svg
+</body>
+</html>

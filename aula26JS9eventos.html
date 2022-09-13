@@ -1,0 +1,46 @@
+<html>
+	<head>
+		<title>Aula26 JS9 Eventos</title>
+		<script language="javascript">
+			
+			function cump(){
+				alert("Olá, seja bem vindo");
+			}
+			
+			function clique(){
+				alert("fui clicado");
+			}
+			
+			function entra(){
+				alert("fui selecionado");
+			}
+			
+			function sai(){
+				alert("perdi o foco");
+			}
+			
+			function fechar(){
+				alert("tchau...");
+			}
+	
+		</script>
+	</head>
+
+	<body onLoad="cump" onUnload="fechar">
+		
+		<input type="button" value="aula js - eventos" onClick="clique()"/>
+		<input type="text" name="txt_aula" onFocus="entra" onBlur="sai"/>
+		
+	</body>
+<html>
+onDblClick
+onKeyDown
+onKeyPress
+onKeyUp
+onMouseDown ->quando clica
+onMouseUp ->quando solta
+onMouseOut
+onMouseOver
+onReset
+onSubmit
+onSelect

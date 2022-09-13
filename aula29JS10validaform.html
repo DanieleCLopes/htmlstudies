@@ -1,0 +1,52 @@
+<html>
+	<head>
+		<title>Aula29-JS10 - validação de forms</title>
+		<style type="text/css">
+		</style>
+
+		<script language="javascript">
+			function validar(){
+				if(doument.cad.fnome.value ==""){
+					alert("Campo nome não pode ser vazio");
+					document.cad.fnome.focus();
+					return false;
+				}
+				if(doument.cad.fsenha.value ==""){
+					alert("Campo senha não pode estar em branco");
+					document.cad.fsenha.focus();
+					return false;
+				}
+				if(doument.cad.ftel.value ==""){
+					alert("Campo telefone não pode ser vazio");
+					document.cad.ftel.focus();
+					return false;
+				}
+			}
+			
+			function mudacor(obj,tipo){
+				//entrada onFocus
+				if(tipo == 1){
+					obj.style.backgroundcolor="#ff0000";
+					obj.style.color="#ffffff";
+				}else if{tipo == 2){//saida onBlur
+					obj.style.backgroundcolor="#ffffff";
+					obj.style.color="#000000";
+				}
+				
+			}
+		</script>
+	</head>
+	<body>
+		<form name="cad" onsubmit="return validar()">
+			<label>Nome:</label><br/>
+			<input type="text" name="fnome" size="50" onFocus="mudacor(this,1)" onBlur="mudacor(this,2)"/><br/><br/>
+
+			<label>Senha:</label><br/>
+			<input type="password" name="fsenha" size="10" onFocus="mudacor(this,1)" onBlur="mudacor(this,2)"/><br/><br/>
+
+			<label>Telefone:</label><br/>
+			<input type="text" name="ftel" size="15" onFocus="mudacor(this,1)" onBlur="mudacor(this,2)"/><br/><br/>
+			<input type="submit" value="ENVIAR"/>
+		</form>
+	</body>
+</html>

@@ -1,0 +1,38 @@
+<html>
+	<head>
+		<title>Aula 27 forms 1</title>
+		<style type="text/css">
+		</style>
+	</head>
+
+	<body>
+		<form name="cad" action="" method="get">
+	<!- action, manda as informações para o arquivo php ->
+<!- post, get forma como será enviada a info para o arquivo - get é mais simples, porém copia tudo na barra de endereços quando fizer a passagem para o arquivo; - post, só tranfere os dados para o arquivo ->
+
+			<label>nome:</label><br/>
+			<input type="text" name="fnome" size="40" maxlenght="35"/><br/><br/>
+	<!- size e maxlength em caracteres ->
+
+			<label>Senha:</label><br/>
+			<input type="password" name="fsenha" size="15" maxlength="10"/><br/><br/>
+
+			<label>Possui veículo próprio?</label><br/>
+			<input type="radio" name="fcarro" value="s" checked="checked"/>sim<br/>
+	<!- não precisa colocar o tipo para o parametro checked, só deixando ele sem o ="" já funciona ->
+			<input type="radio" name="fcarro" value="n"/>não<br/>
+
+			<label>Casoo possui veículo, qual a marca?</label><br/>
+			<input type="checkbox" name="fvw"/>VW<br/>
+			<input type="checkbox" name="fgm"/>GM<br/>
+			<input type="checkbox" name="ffiat"/>Fiat<br/>
+			<input type="checkbox" name="fford"/>Ford<br/>
+			<input type="checkbox" name="fhyundai"/>Hyundai<br/>
+			<input type="checkbox" name="fbmw"/>BMW<br/>
+			<input type="checkbox" name="fkia"/>Kia<br/>
+			<input type="checkbox" name="fhonda"/>Honda<br/>
+			<input type="checkbox" name="foutro"/>Outro<br/>
+
+		</form>
+	</body>
+</html>

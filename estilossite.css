@@ -1,0 +1,51 @@
+body{	margin:auto;
+	width:960px;
+	background-color:#f0f0e0;
+}
+
+#cab, footer{	
+	background-color:#508050;
+	padding:10px 20px 10px 20px;
+	border-radius:0px 0px 20xp 20px;
+	color:#fff;
+}
+
+#parques{background-color:#505080;
+	padding:0px 10px 10px 10px;
+	border-radius:20px;
+}
+
+footer{	margin-top:20px;
+	border-radius:20px;
+}
+
+///sem a vírgula, somente as imagens de uma id específica
+#parques img{
+	float:left;
+	margin:0px 10px 0px 0px;
+	width:150;
+}
+
+#parques articles{
+	padding-bottom:10px;
+	border-bottom:2px dashed #aff;
+	
+}
+
+#parques p{
+	color:#aff;
+	text-align:justify;
+}
+
+h1{	padding-top:10px
+}
+
+h2{	font-size:15px
+}
+
+#parques h1, #parques h2{
+	color:#fff;
+}
+
+.fix{	clear:both;
+}

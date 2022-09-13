@@ -1,0 +1,9 @@
+File
+Trasnfer
+Protocol
+
+FTP-usado para o envio (upload) de arquivos para o servidor
+filezilla
+WSFTP
+hostinger - trabalha com php mysql
+domínio - pode ser pago (privado, registrado) ou pode utilizar o domínio do servidor

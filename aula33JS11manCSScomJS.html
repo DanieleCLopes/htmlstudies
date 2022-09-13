@@ -1,0 +1,23 @@
+<html>
+	<head>
+		<title>Aula33-JS11-manipular css com JS</title>
+		<script language="javascript">
+			//document.get.ElementById("elementoHTML").style.propriedadeCSS = "valor";
+			function formatar(){
+				var opc=1;
+				if(opc == 1){
+					document.getElementById("aula").style.backgroundColor="#ff0000";
+				}else if(opc ==2){
+					document.getElementById("aula").style.backgroundColor="#00ff00";
+				}else if(opc == 3){
+					document.getElementById("aula").style.backgroundcolor="#0000ff";
+				}
+			}
+		</script>
+	</head>
+	<body onload="formatar()">
+		<div id="aula">
+			canalfessorbruno
+		</div>
+	</body>
+</html>

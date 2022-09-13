@@ -1,0 +1,55 @@
+<html>
+	<head>
+		<title>Aula25 JS8 classdate</title>
+		<script language="javascript">
+			
+<!- formatar aparência do relógio com CSS ->
+
+			var data=new Date();
+			var meses=new array("janeiro","fevereiro","março","abril","maio","junho","julho","agosto","setembro","novembro","dezembro")
+			var dsem=new array("domingo","segunda","terça","quarta","quinta","sexta","sabado")
+			
+			document.write(meses[data.getMonth()]);
+			document.write(dsem[data.getDay()]);
+
+			document.write(dsem[data.getDay()] + ", " + data.getDate() + " de " + meses[data.getMonth()] + " de " + data.getFullYear());
+			
+			data.getDate();
+			data.getDay();
+			data.getMonth();
+			data.getFullYear();
+			
+			funcion movRel(){
+				var tempo=new Date();
+				var hora=tempo.getHours();
+				var min=tempo.getMinutes();
+				var seg=tempo.getSeconds();
+			
+				if(hora<10){
+					hora="0"+tempo.getHours();
+				}
+				if(min<10){
+					min="0"+tempo.getMinures();
+				}
+				if(seg<10){
+					seg="0"+tempo.getSeconds();
+				}
+		
+				var impHoras=hora + ":" + min + ":" + seg;
+				document.write(impHoras);
+			
+				document.frel.rel.value=impHoras;
+				
+				setTimeout("movRel",1000);
+			}
+		</script>
+	</head>
+
+	<body>
+		
+		<form name="frel">
+			<input type="text" name="rel" size="10"/>
+		</form>
+		
+	</body>
+<html>

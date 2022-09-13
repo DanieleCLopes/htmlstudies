@@ -1,0 +1,26 @@
+<html>
+	<head>
+		<title>Aula37- imagem de sobreposição (rollover, cambiável)</title>
+		<script type="text/javascript">
+			
+			function preload(){
+				imgs=array('btcanl2.jpg','btfessor2.jpg','btbruno2.jpg');
+				imgQtde=imgs.length;
+				for(i=0;i<imgQtde;i++){
+					var preloading=new Image();
+					preloading.src=imgs[i];
+				}
+			}
+
+			function troca(obj,imgtroca){
+				ibj.src=imgtroca;
+			}
+		</script>
+	</head>
+	<body onload="preload()">
+		<img src="btCanal1.jpg" id="bt1" onmouseover="troca(this,'btCanal2.jpg')" onmouseout="troca(this,'btCanal1.jpg')"/>
+		<img src="btfessor1.jpg" id="bt2" onmouseover="troca(this,'btfessor2.jpg')" onmouseout="troca(this,'btfessor1.jpg')"/>
+		<img src="btbruno1.jpg" id="bt3" onmouseover="troca(this,'btbruno2.jpg')" onmouseout="troca(this,'btbruno1.jpg')"/>
+		
+	</body>
+</html>
